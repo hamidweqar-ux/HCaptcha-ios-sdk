@@ -228,6 +228,8 @@ fileprivate extension HCaptchaWebViewManager {
 
         let conf = WKWebViewConfiguration()
         conf.userContentController = controller
+        conf.allowsInlineMediaPlayback = true
+        conf.mediaTypesRequiringUserActionForPlayback = []
 
         return conf
     }
